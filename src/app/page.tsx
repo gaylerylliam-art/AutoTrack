@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Shield, TrendingUp, Layers, UserCheck } from 'lucide-react';
 
 /* 
@@ -23,9 +24,9 @@ export default function LandingPage() {
              <a href="#compliance" className="hover:text-teal-500 transition-colors">Compliance</a>
              <a href="#pricing" className="hover:text-teal-500 transition-colors">Pricing</a>
           </div>
-          <button className="rounded-xl bg-[#0F172A] px-5 py-2.5 text-sm font-bold text-white shadow-xl shadow-slate-200 transition-all hover:scale-105 active:scale-95">
+          <Link href="/dashboard" className="rounded-xl bg-[#0F172A] px-5 py-2.5 text-sm font-bold text-white shadow-xl shadow-slate-200 transition-all hover:scale-105 active:scale-95">
              Open Dashboard
-          </button>
+          </Link>
         </div>
       </nav>
 
@@ -49,9 +50,9 @@ export default function LandingPage() {
           </p>
           
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-             <button className="h-14 rounded-2xl bg-[#0F172A] px-8 text-base font-bold text-white shadow-2xl transition-all hover:scale-105 hover:bg-slate-800">
+             <Link href="/dashboard" className="flex items-center justify-center h-14 rounded-2xl bg-[#0F172A] px-8 text-base font-bold text-white shadow-2xl transition-all hover:scale-105 hover:bg-slate-800">
                Start 30-Day Free Trial
-             </button>
+             </Link>
              <button className="h-14 rounded-2xl border-2 border-slate-100 bg-white px-8 text-base font-bold text-slate-600 shadow-sm transition-all hover:bg-slate-50">
                Watch Demo Video
              </button>
@@ -117,9 +118,9 @@ export default function LandingPage() {
            <p className="mx-auto mt-6 max-w-xl text-slate-400 font-medium">
              Join over 500 organizations managing £1B+ in vehicle assets with AutoTrack. 
            </p>
-           <button className="mt-10 h-16 rounded-2xl bg-white px-10 text-lg font-black text-slate-900 shadow-lg transition-transform hover:scale-105 active:scale-95">
+           <Link href="/dashboard" className="flex items-center justify-center mt-10 h-16 rounded-2xl bg-white px-10 text-lg font-black text-slate-900 shadow-lg transition-transform hover:scale-105 active:scale-95">
              Create Your Free Account
-           </button>
+           </Link>
         </div>
         <div className="mt-12 text-center text-sm font-bold text-slate-400">
            © 2026 AutoTrack Financial Intelligence. All rights reserved.
